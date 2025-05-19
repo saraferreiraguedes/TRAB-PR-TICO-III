@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  grid-template-rows: repeat(2, 80px);
+  gap: 15px;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+/* Cores aleatórias e vibrantes */
+.cor1 { background-color: #ff6f61; }  /* vermelho coral */
+.cor2 { background-color: #6a5acd; }  /* azul violeta */
+.cor3 { background-color: #3cb371; }  /* verde médio */
+.cor4 { background-color: #f4d35e; }  /* amarelo ouro */
