@@ -1,107 +1,27 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #222;
-    color: white;
-    padding: 1rem 2rem;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Seção Sobre */
-  .sobre {
-    padding: 2rem;
-    background-color: #f4f4f4;
-  }
-  
-  /* Galeria de Projetos */
-  .galeria {
-    padding: 2rem;
-  }
-  
-  .projetos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-  
-  .projeto {
-    background-color: #ddd;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  main {
-    flex: 1;
-  }
-  .projeto h3 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .projeto p {
-    color: #555;
-    font-size: 0.95rem;
-  }
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  grid-template-rows: repeat(2, 80px);
+  gap: 15px;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+/* Cores aleatórias e vibrantes */
+.cor1 { background-color: #ff6f61; }  /* vermelho coral */
+.cor2 { background-color: #6a5acd; }  /* azul violeta */
+.cor3 { background-color: #3cb371; }  /* verde médio */
+.cor4 { background-color: #f4d35e; }  /* amarelo ouro */
