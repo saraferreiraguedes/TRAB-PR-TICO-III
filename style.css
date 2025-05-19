@@ -1,27 +1,55 @@
-body {
+* {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 80px);
-  grid-template-rows: repeat(2, 80px);
-  gap: 15px;
+  grid-template-rows: 50px 1fr 1fr 40px;
+  height: 100vh;
+  gap: 10px;
+  background-color: #f5f5f5;
+  padding: 10px;
 }
 
-.item {
-  width: 80px;
-  height: 80px;
+/* Barras */
+.top-bar {
+  background-color: #607d8b; /* cinza-azulado */
+}
+
+.bottom-bar {
+  background-color: #ff9800; /* laranja */
+}
+
+/* Linhas de blocos */
+.row {
+  display: grid;
+  gap: 10px;
+}
+
+.row1 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.row2 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.box {
   border-radius: 5px;
+  height: 100%;
 }
 
-/* Cores aleatórias e vibrantes */
-.cor1 { background-color: #ff6f61; }  /* vermelho coral */
-.cor2 { background-color: #6a5acd; }  /* azul violeta */
-.cor3 { background-color: #3cb371; }  /* verde médio */
-.cor4 { background-color: #f4d35e; }  /* amarelo ouro */
+/* Cores novas */
+.azul {
+  background-color: #2196f3;
+}
+
+.verde {
+  background-color: #4caf50;
+}
